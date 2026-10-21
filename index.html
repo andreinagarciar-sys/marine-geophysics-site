@@ -63,7 +63,12 @@
             line-height: 1.1;
             margin-bottom: 50px;
         }
-
+.logo-area img {
+    height: 120px;
+    width: auto;
+    display: block;
+}
+                
         .subtitle {
             font-size: 1.5rem;
             font-weight: 500;
@@ -123,22 +128,14 @@
             color: white;
         }
 
-       .top-banner{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:15px;
-
-    flex-wrap:wrap;
-
-    width:100%;
-
-    margin-bottom:40px;
+     .top-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    width: 100%;
 }
+
 
       .top-badge{
 
@@ -294,27 +291,33 @@
 
 <body>
     
-<a href="index.html" class="brand">
-    <img src="Logo_MGR_21102026_white.png">
-</a>
-
 <div class="top-banner">
 
-    <div class="language-inline">
-        <strong>EN</strong> |
-        <a href="fr.html">FR</a>
+    <div class="logo-area">
+        <a href="index.html">
+            <img src="Logo_MGR_21102026_white.png" alt="MGR Geophysical Consultants">
+        </a>
     </div>
 
-    <div class="top-badge">
-        Marine Magnetics
-    </div>
+    <div style="display:flex;align-items:center;gap:15px;">
 
-    <div class="top-badge">
-        Gravity Surveys
-    </div>
+        <div class="language-inline">
+            <strong>EN</strong> |
+            <a href="fr.html">FR</a>
+        </div>
 
-    <div class="top-badge">
-        Project Coordination
+        <div class="top-badge">
+            Marine Magnetics
+        </div>
+
+        <div class="top-badge">
+            Gravity Surveys
+        </div>
+
+        <div class="top-badge">
+            Project Coordination
+        </div>
+
     </div>
 
 </div>
