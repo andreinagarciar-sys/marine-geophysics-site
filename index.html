@@ -3,65 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marine Geophysics and Project Coordination</title>
+    <title>Marine Geophysics & Project Coordination</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:'Inter',sans-serif;
+            color:#1f2937;
+            line-height:1.6;
+            background:white;
+        }
+
+        .hero{
+            height:100vh;
+            background:
+                linear-gradient(
+                    rgba(0,0,0,0.45),
+                    rgba(0,0,0,0.45)
+                ),
+                url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
+
+            background-size:cover;
+            background-position:center;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content{
+            max-width:800px;
+        }
+
+        .hero h1{
+            font-size:4rem;
+            font-weight:700;
+            margin-bottom:20px;
+        }
+
+        .hero p{
+            font-size:1.3rem;
+            margin-bottom:40px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:15px 35px;
+            background:#38bdf8;
+            color:white;
+            text-decoration:none;
+            border-radius:40px;
+            font-weight:600;
+            transition:0.3s;
+        }
+
+        .btn:hover{
+            background:#0ea5e9;
+        }
+
+        section{
+            max-width:1100px;
+            margin:auto;
+            padding:90px 30px;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:40px;
+            color:#0f172a;
+            font-size:2rem;
+        }
+
+        .about{
+            text-align:center;
+            max-width:800px;
+            margin:auto;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            padding:30px;
+            background:#f8fafc;
+            border-radius:16px;
+            text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            color:#0f172a;
+        }
+
+        .contact{
+            text-align:center;
+        }
+
+        .contact p{
+            margin-bottom:10px;
+        }
+
+        footer{
+            text-align:center;
+            padding:40px;
+            background:#0f172a;
+            color:white;
+        }
+
+        @media (max-width:768px){
+
+            .hero h1{
+                font-size:2.5rem;
+            }
+
+            .hero p{
+                font-size:1.1rem;
+            }
+
+        }
+
+    </style>
+
 </head>
+
 <body>
 
-    <h1>Marine Geophysics and Project Coordination</h1>
+    <header class="hero">
 
-    <p>
-        Supporting marine survey projects from planning to delivery,
-        with expertise in magnetic and gravity data acquisition and
-        project management.
-    </p>
+        <div class="hero-content">
 
-    <button>Contact Me</button>
+            <h1>Marine Geophysics<br>& Project Coordination</h1>
 
-    <h2>About</h2>
+            <p>
+                Supporting marine survey projects from planning
+                to successful delivery, with expertise in magnetic
+                and gravity data acquisition.
+            </p>
 
-    <p>
-        Marine geophysicist and project coordinator with expertise in
-        magnetic and gravity surveys for offshore and nearshore projects.
-    </p>
+            <a href="#contact" class="btn">
+                Contact Me
+            </a>
 
-    <p>
-        I help clients plan, coordinate and deliver high-quality marine
-        geophysical projects involving magnetics, gravimetry and related
-        datasets.
-    </p>
+        </div>
 
-    <h2>Who I Work With</h2>
+    </header>
 
-    <ul>
-        <li>Offshore survey companies</li>
-        <li>Marine engineering consultancies</li>
-        <li>Renewable energy developers</li>
-        <li>Subsea cable projects</li>
-        <li>Research institutions</li>
-    </ul>
+    <section>
 
-    <h2>Why Work With Me</h2>
+        <h2>About</h2>
 
-    <ul>
-        <li>International experience</li>
-        <li>English, French and Spanish</li>
-        <li>Technical project coordination</li>
-        <li>Bridge between acquisition, processing and clients</li>
-    </ul>
+        <div class="about">
 
- 
-<p>
-Interested in discussing a project or collaboration?
-</p>
+            <p>
+                Marine geophysicist and project coordinator with expertise
+                in magnetic and gravity surveys for offshore and nearshore
+                projects.
+            </p>
 
-<p>
-Email: contact@mgrgeo.com
-</p>
+            <br>
 
-<p>
-LinkedIn: Your LinkedIn profile
-</p>
-<h2>Contact</h2>
+            <p>
+                I help clients plan, coordinate and deliver high-quality
+                marine geophysical projects involving magnetics,
+                gravimetry and related datasets.
+            </p>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Expertise</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Marine Magnetics</h3>
+                <p>
+                    Survey planning, acquisition support,
+                    quality control and interpretation.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Gravity Surveys</h3>
+                <p>
+                    Project oversight and delivery of gravity
+                    datasets for marine investigations.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Project Coordination</h3>
+                <p>
+                    Bridging technical teams, contractors
+                    and clients from planning to reporting.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Why Work With Me</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>International Experience</h3>
+            </div>
+
+            <div class="card">
+                <h3>Multilingual Communication</h3>
+            </div>
+
+            <div class="card">
+                <h3>Technical Coordination</h3>
+            </div>
+
+            <div class="card">
+                <h3>Client-Focused Delivery</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Let's discuss your next project.
+        </p>
+
+        <p>
+            Email: your@email.com
+        </p>
+
+        <p>
+            LinkedIn: Your LinkedIn Profile
+        </p>
+
+    </section>
+
+    <footer>
+
+        © 2026 Marine Geophysics & Project Coordination
+
+    </footer>
 
 </body>
 </html>
