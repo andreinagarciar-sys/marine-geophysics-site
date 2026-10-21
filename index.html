@@ -21,15 +21,11 @@
             background: #112B45;
         }
 
-        .hero {
+               .hero {
             min-height: 100vh;
 
-            background:
-                linear-gradient(
-                    rgba(10,20,35,0.45),
-                    rgba(10,20,35,0.45)
-                ),
-                url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
+            background-image:
+        url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
 
             background-size: cover;
             background-position: center;
@@ -45,6 +41,26 @@
             position: relative;
         }
 
+        
+.hero::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 300px;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(17,43,69,0),
+        rgba(17,43,69,1)
+    );
+
+    pointer-events: none;
+}
+        
         .hero-content {
             max-width: 850px;
         }
