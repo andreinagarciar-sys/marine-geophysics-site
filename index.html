@@ -45,7 +45,7 @@
             position: relative;
         }
 
-        hero-content {
+        .hero-content {
             max-width: 850px;
         }
 
@@ -258,11 +258,18 @@
     align-items: center;
     padding: 15px 40px;
 }
-        .brand img {
-    height: 70px;
+
+.brand {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    z-index: 1000;
+}
+
+.brand img {
+    height: 160px;
     width: auto;
-    display: block;
-        }
+}
 
         @media (max-width:768px) {
 
@@ -287,7 +294,6 @@
     
 <a href="index.html" class="brand">
     <img src="Logo_MGR_21102026_white.png">
-         alt="MGR Geophysical Consultants">
 </a>
 
 <div class="top-banner">
