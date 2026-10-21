@@ -1,168 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marine Geophysics & Project Coordination</title>
-       <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<title>Marine Geophysics & Project Coordination</title>
 
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #1f2937;
-            line-height: 1.6;
-            background: white;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        .hero {
-            height: 100vh;
-            background:
-                linear-gradient(
-                    rgba(0,0,0,0.45),
-                    rgba(0,0,0,0.45)
-                ),
-                url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
+<style>
 
-            background-size: cover;
-            background-position: center;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+body{
+    font-family:'Inter',sans-serif;
+    color:#1f2937;
+    line-height:1.6;
+    background:white;
+}
 
-            color: white;
-            padding: 20px;
+.hero{
+    min-height:100vh;
 
-            position: relative;
-        }
+    background:
+        linear-gradient(
+            rgba(10,20,35,0.55),
+            rgba(10,20,35,0.55)
+        ),
+        url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
 
-        .language-switch {
-            position: absolute;
-            top: 25px;
-            right: 35px;
-            font-size: 14px;
-            font-weight: bold;
-        }
+    background-size:cover;
+    background-position:center;
 
-        .language-switch a {
-            color: white;
-            text-decoration: none;
-        }
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-        .language-switch a:hover {
-            text-decoration: underline;
-        }
+    text-align:center;
+    color:white;
 
-        .hero-content {
-            max-width: 850px;
-        }
+    padding:40px;
+    position:relative;
+}
 
-        .name {
-            font-size: 1rem;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 25px;
-            color: rgba(255,255,255,0.9);
-        }
+.language-switch{
+    position:absolute;
+    top:30px;
+    right:35px;
+}
 
-        .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
-        }
+.language-switch a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
 
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-        }
+.language-switch a:hover{
+    text-decoration:underline;
+}
 
-        .btn {
-            display: inline-block;
-            padding: 15px 35px;
-            background: #38bdf8;
-            color: white;
-            text-decoration: none;
-            border-radius: 40px;
-            transition: 0.3s;
-        }
+.hero-content{
+    max-width:900px;
+}
 
-        .btn:hover {
-            background: #0ea5e9;
-        }
+.hero h1{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:25px;
+}
 
-        section {
-            max-width: 1100px;
-            margin: auto;
-            padding: 90px 30px;
-        }
+.subtitle{
+    font-size:1.35rem;
+    margin-bottom:15px;
+}
 
-        h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #0f172a;
-            font-size: 2rem;
-        }
+.services{
+    font-size:1rem;
+    opacity:0.9;
+    letter-spacing:0.5px;
+    margin-bottom:40px;
+}
 
-        .about {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
+.btn{
+    display:inline-block;
+    background:#4FC3F7;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
 
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-            gap: 25px;
-        }
+.btn:hover{
+    background:#29B6F6;
+}
 
-        .card {
-            padding: 30px;
-            background: #f8fafc;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
+.hero-cards{
+    margin-top:60px;
 
-        .card h3 {
-            margin-bottom: 15px;
-        }
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
 
-        .contact {
-            text-align: center;
-        }
+.hero-card{
 
-        .contact p {
-            margin-bottom: 10px;
-        }
+    background:rgba(255,255,255,0.12);
 
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #0f172a;
-            color: white;
-        }
+    backdrop-filter:blur(10px);
 
-        @media (max-width:768px){
+    border:1px solid rgba(255,255,255,0.2);
 
-            .hero h1{
-                font-size:2.5rem;
-            }
+    border-radius:18px;
 
-            .hero p{
-                font-size:1.1rem;
-            }
+    padding:24px;
 
-        }
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
 
-    </style>
+    transition:0.3s;
+}
+
+.hero-card:hover{
+    transform:translateY(-4px);
+}
+
+.hero-card h3{
+    font-size:1rem;
+}
+
+section{
+    max-width:1100px;
+    margin:auto;
+    padding:90px 30px;
+}
+
+.about{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+}
+
+.about h2{
+    margin-bottom:30px;
+}
+
+.about p{
+    margin-bottom:20px;
+}
+
+.expertise{
+    background:#f8fafc;
+}
+
+.expertise h2{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.05);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#0f172a;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:20px;
+}
+
+.contact p{
+    margin-bottom:12px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.7rem;
+    }
+
+    .subtitle{
+        font-size:1.1rem;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -177,11 +229,17 @@
 
     <div class="hero-content">
 
-        <h1>Marine Geophysics<br>& Project Coordination</h1>
+        <h1>
+            Marine Geophysics<br>
+            & Project Coordination
+        </h1>
 
-        <p>
-            Supporting marine geophysical projects from planning
-            to successful delivery.
+        <p class="subtitle">
+            Supporting marine geophysical projects
+            from planning to delivery.
+        </p>
+
+        <p class="services">
             Magnetic Surveys • Gravity Surveys • Technical Coordination
         </p>
 
@@ -189,38 +247,49 @@
             Contact Me
         </a>
 
+        <div class="hero-cards">
+
+            <div class="hero-card">
+                <h3>🌍 International Experience</h3>
+            </div>
+
+            <div class="hero-card">
+                <h3>🗣 Multilingual Communication</h3>
+            </div>
+
+            <div class="hero-card">
+                <h3>⚙ Technical Coordination</h3>
+            </div>
+
+            <div class="hero-card">
+                <h3>🤝 Client-Focused Delivery</h3>
+            </div>
+
+        </div>
+
     </div>
 
 </header>
 
-<section>
+<section class="about">
 
     <h2>About</h2>
 
-    <div class="about">
+    <p>
+        Independent consultant specialized in marine
+        magnetics, gravity surveys and technical
+        project coordination.
+    </p>
 
-        <p>
-            Independent consultant specialized in marine magnetics, 
-            gravity surveys and technical project coordination.
-
-            Supporting offshore, coastal and 
-            research projects with a focus on technical quality,
-            clear communication and successful delivery.
-        </p>
-
-        <br>
-
-        <p>
-            I help clients plan, coordinate and deliver high-quality
-            marine geophysical projects involving magnetics,
-            gravimetry and related datasets.
-        </p>
-
-    </div>
+    <p>
+        Supporting offshore, coastal and research
+        projects with a focus on technical quality,
+        clear communication and successful delivery.
+    </p>
 
 </section>
 
-<section>
+<section class="expertise">
 
     <h2>Expertise</h2>
 
@@ -237,43 +306,17 @@
         <div class="card">
             <h3>Gravity Surveys</h3>
             <p>
-                Project oversight and management of
-                marine gravity datasets.
+                Project oversight and gravity data
+                management.
             </p>
         </div>
 
         <div class="card">
             <h3>Project Coordination</h3>
             <p>
-                Bridging technical teams, contractors
-                and clients from planning to delivery.
+                Bridging technical teams,
+                contractors and clients.
             </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section>
-
-    <h2>Why Work With Me</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>International Experience</h3>
-        </div>
-
-        <div class="card">
-            <h3>Multilingual Communication</h3>
-        </div>
-
-        <div class="card">
-            <h3>Technical Coordination</h3>
-        </div>
-
-        <div class="card">
-            <h3>Client-Focused Delivery</h3>
         </div>
 
     </div>
@@ -282,27 +325,24 @@
 
 <section id="contact" class="contact">
 
-    <h2>Contact</h2>
+    <h2>Let's Discuss Your Next Project</h2>
 
     <p>
-        Let's discuss your next project.
+        For collaborations, technical support
+        or project inquiries.
     </p>
 
-    <p>
-        Email: contact@mgrgeo.com
-    </p>
+    <br>
 
-    <p>
-        LinkedIn: andreinagarciareyes
-    </p>
+    <p>Email: your@email.com</p>
 
+    <p>LinkedIn: Your LinkedIn profile</p>
 
 </section>
 
 <footer>
 
-    © 2026 Andreína García-Reyes · Marine Geophysics & Project Coordination
-    • Offshore • Coastal • Research
+    Marine Geophysics & Project Coordination
 
 </footer>
 
