@@ -151,6 +151,7 @@
 		    text-align: center;
 		    color: white;
 		    padding: 30px;
+		    padding-top: 90px;
 		    position: relative;
 		    overflow: hidden;
 		}
@@ -214,7 +215,7 @@
 		    z-index: 0;
 		}
 
-		.h2 {
+		h2 {
             text-align: center;
             margin-bottom: 35px;
             color: white;
@@ -237,6 +238,16 @@
 		.language-inline a:hover{
 			text-decoration:underline;
 		}
+
+		.linkedin-link a {
+			    color: #89E9FF;
+			    text-decoration: none;
+			    font-weight: 600;
+			}
+			
+			.linkedin-link a:hover {
+			    text-decoration: underline;
+			}
 
 		.logo-area {
 		    display: flex;
@@ -313,9 +324,14 @@
 		.top-banner {
 			display: flex;
 			align-items: center;
+			top: 0;
+			left: 0;
 			width: 100%;
 			padding: 4px 25px;
-			position: relative;
+			position: fixed;
+			z-index: 9999;
+			background: rgba(17,43,69,0.95);
+		    backdrop-filter: blur(5px);
 		}
       
         @media (max-width:768px) {
@@ -473,9 +489,12 @@ from planning through delivery.
         Email: contact@mgrgeo.com
     </p>
 
-    <p>
-        LinkedIn: andreinagarciareyes
-    </p>
+    <p class="linkedin-link">
+	    <a href="https://www.linkedin.com/in/andreinagarciareyes/"
+	       target="_blank">
+	        Connect on LinkedIn
+	    </a>
+	</p>
 
 </section>
 
