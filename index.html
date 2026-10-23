@@ -144,6 +144,24 @@
 		    overflow: hidden;
 		}
 
+		.hero-bg {
+		    position: absolute;
+		
+		    top: -2%;
+		    left: -2%;
+		
+		    width: 104%;
+		    height: 104%;
+		
+		    background-image: url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
+		    background-size: 103%;
+		    background-position: center;
+		
+		    animation: zoomOnly 25s infinite alternate ease-in-out;
+		
+		    z-index: 0;
+		}
+
         .hero::before {
 			content: "";
 			position: absolute;
@@ -169,13 +187,10 @@
 				rgba(17,43,69,0),
 				rgba(17,43,69,1)
 			);
-			background-image: url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
-    		background-size: cover;
-    		background-position: center;
+			
 			pointer-events: none;
 			inset: -3%;
-			animation: oceanDrift 30s ease-in-out infinite alternate;
-		    z-index: -2;
+			z-index: -2;
 		} 
 
 		@keyframes oceanDrift {
@@ -201,12 +216,12 @@
             scale(1.03);
     }
 }
-		@keyframes slowZoom {
+		@keyframes slowzoomOnly {
     from {
         transform: scale(1);
     }
     to {
-        transform: scale(1.08);
+        transform: scale(1.05);
     }
 }
         .hero-content {
@@ -374,7 +389,9 @@
 </div>
     
 <header class="hero">
-
+	
+	<div class="hero-bg"></div>
+	
     <div class="hero-content">
 
         <p class="company-name">
