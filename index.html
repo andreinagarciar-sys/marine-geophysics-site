@@ -131,20 +131,20 @@
 			padding: 15px 40px;
 		}
 		
-        .hero {
-            min-height: 100vh;
-            background-image:
-			url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding: 30px;
-            position: relative;
-        }
+       .hero {
+		    background-image: url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
+		    background-size: cover;
+		    background-position: center;
+			min-height: 100vh;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    text-align: center;
+		    color: white;
+		    padding: 30px;
+		    position: relative;
+		    overflow: hidden;
+		}
 
         .hero::before {
 			content: "";
@@ -191,6 +191,19 @@
 			0 2px 8px rgba(0,0,0,0.25),
 			0 4px 20px rgba(0,0,0,0.15);
         }
+
+		.hero-video {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		
+		    width: 100%;
+		    height: 100%;
+		
+		    object-fit: cover;
+		
+		    z-index: 0;
+		}
 
 		.h2 {
             text-align: center;
@@ -326,6 +339,10 @@
 </div>
     
 <header class="hero">
+
+	<video class="hero-video" autoplay muted loop playsinline>
+    	<source src="MGR_website_video_1.mp4" type="video/mp4" preload="auto">
+    </video>
 
     <div class="hero-content">
 
