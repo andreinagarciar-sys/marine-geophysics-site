@@ -228,21 +228,31 @@
             font-weight: 600;
         }
 		
-		.language-inline{
-			color:white;
-			font-size:0.9rem;
-			letter-spacing:1px;
-			margin-right:10px;
-			margin-left: auto;
+		.language-inline {
+		    margin-left: auto;
+		
+		    display: flex;
+		    align-items: center;
+		    gap: 10px;
+		
+		    font-size: 0.90rem;
+		    letter-spacing: 0.5px;
 		}
 
-		.language-inline a{
-			color:white;
-			text-decoration:none;
+		.language-inline a {
+		    text-decoration: none;
+		    color: rgba(255,255,255,0.55);
+		
+		    transition: color 0.25s ease;
 		}
 
-		.language-inline a:hover{
-			text-decoration:underline;
+		.language-inline a:hover {
+		    color: rgba(255,255,255,0.95);
+		}
+
+		.language-inline a.active {
+		    color: white;
+		    font-weight: 600;
 		}
 
 		.linkedin-link a {
@@ -291,6 +301,10 @@
             color: white;
         }
 
+		.separator {
+		    color: rgba(255,255,255,0.35);
+		}
+		
        .services {
 		    margin-top: 25px;
 		    font-size: 1.1rem;
@@ -378,8 +392,9 @@
     </div>
 
     <div class="language-inline">
-        <strong>EN</strong> |
-        <a href="fr.html">FR</a>
+	    <a href="index.html">English</a>
+	    <span class="separator">·</span>
+	    <a href="fr.html" class="active">Français</a>
     </div>
 
 </div>
