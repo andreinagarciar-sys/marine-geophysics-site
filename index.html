@@ -171,12 +171,38 @@
 				rgba(17,43,69,0),
 				rgba(17,43,69,1)
 			);
+			background-image: url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
+    		background-size: cover;
+    		background-position: center;
 			pointer-events: none;
-			inset: 0;
-			animation: slowZoom 20s ease-in-out infinite alternate;
-		    z-index: -1;
+			inset: -3%;
+			animation: oceanDrift 30s ease-in-out infinite alternate;
+		    z-index: 0;
 		} 
 
+		@keyframes oceanDrift {
+
+    0% {
+        transform:
+            translateX(-1.5%)
+            translateY(0%)
+            scale(1.03);
+    }
+
+    50% {
+        transform:
+            translateX(0%)
+            translateY(-0.5%)
+            scale(1.05);
+    }
+
+    100% {
+        transform:
+            translateX(1.5%)
+            translateY(0%)
+            scale(1.03);
+    }
+}
 		@keyframes slowZoom {
     from {
         transform: scale(1);
