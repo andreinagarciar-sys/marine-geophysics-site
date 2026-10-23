@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Géophysique Marine & Coordination Technique</title>
+    <title>MGR Geophysical Consultants</title>
 
     <style>
 
@@ -13,252 +14,465 @@
             box-sizing: border-box;
         }
 
-        body {
+		body {
             font-family: Arial, sans-serif;
             color: #1f2937;
-            line-height: 1.6;
-            background: white;
+            line-height: 1.7;
+            background: #112B45;
         }
-
-        .hero {
-            height: 100vh;
-            background:
-                linear-gradient(
-                    rgba(0,0,0,0.45),
-                    rgba(0,0,0,0.45)
-                ),
-                url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
-
-            background-size: cover;
-            background-position: center;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
+		.about {
             text-align: center;
+			color: white;
+        }
 
+		.brand {
+			position: fixed;
+			top: 5px;
+			left: 10px;
+			z-index: 9999;
+		}
+
+		.brand img {
+			height: 180px;
+			width: auto;
+			display: block;
+		}
+
+		.brand-name {
+		    color: white;
+		    font-size: 1.1rem;
+		    font-weight: 600;
+		    letter-spacing: 1px;
+		}
+
+		.brand-tagline {
+		    color: rgba(255,255,255,0.8);
+		    font-size: 0.8rem;
+		}
+
+		.btn {
+			background: transparent;
+			border: 2px solid #89E9FF;
+			color: #89E9FF;
+			padding: 14px 36px;
+			border-radius: 40px;
+			font-weight: 600;
+			transition: all 0.3s ease;
+		}
+		
+        .btn:hover {
+            background: #0B2D52;
+			color: white;
+        }
+
+		.company-name {
+			font-size: 1rem;
+			font-weight: 500;
+			letter-spacing: 0.22em;
+			text-transform: uppercase;
+			color: rgba(255,255,255,0.95);
+			margin-bottom: 20px;
+			text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+		}
+		
+		.contact {
+            text-align: center;
+			color: rgba(255,255,255,0.95);
+			margin-top: 80px;
+        }
+
+        .contact p {
+            margin-bottom: 12px;
+        }
+
+		.expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+            gap: 40px;
+            margin-top: 15px;
+    		margin-bottom: 80px;
+        }
+		
+		.expertise h2 {
+		    color: white;
+		    margin-bottom: 15px;
+		}
+        .expertise-item {
+            text-align: center;
+            padding: 30px;
+            background: rgba(255,255,255,0.08);
+            border-radius: 12px;
+            border:1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
             color: white;
-            padding: 20px;
-
-            position: relative;
         }
 
-        .language-switch {
-            position: absolute;
-            top: 25px;
-            right: 35px;
-            font-size: 14px;
-            font-weight: bold;
+        .expertise-item h3 {
+            margin-bottom: 15px;
+            color: rgba(255,255,255,0.9);
         }
 
-        .language-switch a {
+        .expertise-nav span:hover {
+			color: #53B9EE;
+			transition: 0.3s;
+		}
+
+		.expertise-nav {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 25px;
+			font-size: 0.85rem;
+			font-weight: 600;
+			letter-spacing: 1.5px;
+			text-transform: uppercase;
+		}
+        
+		.expertise-nav span {
+			color: white;
+			opacity: 0.9;
+		}
+        
+        footer {
+            background: #0f172a;
             color: white;
-            text-decoration: none;
+            text-align: center;
+            padding: 35px;
+            font-size: 0.9rem;
         }
+		
+		header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 15px 40px;
+		}
+		
+       .hero {
+			min-height: 100vh;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    text-align: center;
+		    color: white;
+		    padding: 30px;
+		    padding-top: 90px;
+		    position: relative;
+		    overflow: hidden;
+		}
 
-        .language-switch a:hover {
-            text-decoration: underline;
-        }
-
-        .language-switch strong {
-            color: white;
-        }
-
+        .hero::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(
+			to bottom,
+			rgba(0,0,0,0.30),
+			rgba(0,0,0,0.15) 40%,
+			rgba(0,0,0,0.10)
+			);
+			z-index: 1;
+		}
+        
+		.hero::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: 300px;
+			background: linear-gradient(
+				to bottom,
+				rgba(17,43,69,0),
+				rgba(17,43,69,1)
+			);
+			pointer-events: none;
+		}
+        
         .hero-content {
             max-width: 850px;
+            text-shadow: 0 2px 15px rgba(0,0,0,0.45);
+            position:relative;
+            z-index: 2;
         }
 
         .hero h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 50px;
+			color: white;
+			text-shadow:
+			0 2px 8px rgba(0,0,0,0.25),
+			0 4px 20px rgba(0,0,0,0.15);
         }
 
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 40px;
-        }
+		.hero-video {
+		    position: absolute;
+		    top: 0;
+		    left: 0;
+		
+		    width: 100%;
+		    height: 100%;
+		
+		    object-fit: cover;
+		
+		    z-index: 0;
+		}
 
-        .btn {
-            display: inline-block;
-            padding: 15px 35px;
-            background: #38bdf8;
+		.section h2 {
+            text-align: center;
+            margin-bottom: 10px;
             color: white;
-            text-decoration: none;
-            border-radius: 40px;
+            font-weight: 600;
+        }
+		
+		.language-inline{
+			color:white;
+			font-size:0.9rem;
+			letter-spacing:1px;
+			margin-right:10px;
+			margin-left: auto;
+		}
+
+		.language-inline a{
+			color:white;
+			text-decoration:none;
+		}
+
+		.language-inline a:hover{
+			text-decoration:underline;
+		}
+
+		.linkedin-link a {
+			    color: #89E9FF;
+			    text-decoration: none;
+			    font-weight: 600;
+			}
+			
+			.linkedin-link a:hover {
+			    text-decoration: underline;
+			}
+
+		.logo-area {
+		    display: flex;
+		    align-items: flex-start;
+		    gap: 12px;
+			flex-direction: column;
+		}
+		
+        .logo-area img {
+			height: 110px;
+			width: auto;
+			display: block;
         }
 
-        .btn:hover {
-            background: #0ea5e9;
+		.logo-text {
+		    margin-top: -5px;
+		    color: white;
+		    font-size: 0.70rem;
+		    letter-spacing: 2px;
+		    text-transform: uppercase;
+	 	    opacity: 0.85;
+		}
+		.qualities {
+			margin-top: 25px;
+			font-size: 1rem;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			color: rgba(255,255,255,0.85);
         }
 
-        section {
-            max-width: 1100px;
+        .section {
+            max-width: 950px;
             margin: auto;
-            padding: 90px 30px;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #0f172a;
-            font-size: 2rem;
-        }
-
-        .about {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-            gap: 25px;
-        }
-
-        .card {
-            padding: 30px;
-            background: #f8fafc;
-            border-radius: 16px;
-            text-align: center;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-
-        .card h3 {
-            margin-bottom: 15px;
-        }
-
-        .contact {
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            padding: 40px;
-            background: #0f172a;
+            padding: 100px 30px;
             color: white;
         }
 
-        @media (max-width:768px){
+       .services {
+		    margin-top: 25px;
+		    font-size: 1.1rem;
+		    letter-spacing: 1px;
+		    text-transform: uppercase;
+		    font-weight: 400;
+		    color: rgba(255,255,255,0.95);
+		    text-shadow: 0 2px 8px rgba(0,0,0,0.35);
+		}
+		        
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 35px;
+        }
 
-            .hero h1{
-                font-size:2.5rem;
+		.top-badge{
+			background:rgba(255,255,255,0.10);
+			color:white;
+			border:1px solid rgba(255,255,255,0.25);
+			padding:10px 18px;
+			border-radius:4px;
+			font-size:0.9rem;
+			text-transform:uppercase;
+			letter-spacing:1px;
+		}
+
+		.top-badge a{
+			color:white;
+			text-decoration:none;
+		}
+		
+		.top-badge a:hover{
+			text-decoration:underline;
+		}
+		
+		.top-banner {
+			display: flex;
+			align-items: center;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 4px 25px;
+			position: fixed;
+			z-index: 9999;
+			background: rgba(17,43,69,0.95);
+		    backdrop-filter: blur(5px);
+		}
+      
+        @media (max-width:768px) {
+
+            .hero h1 {
+                font-size: 2.7rem;
             }
 
-            .hero p{
-                font-size:1.1rem;
+            .subtitle {
+                font-size: 1.1rem;
             }
 
+            .qualities {
+                font-size: 0.85rem;
+            }
         }
 
     </style>
 
 </head>
-<body>
 
+<body>
+    
+<div class="top-banner">
+
+    <div class="logo-area">
+        <a href="index.html">
+            <img src="Logo_MGR_21102026_white_sans_bordure.png" alt="MGR">
+        </a>
+    </div>
+
+	<div class="expertise-nav">
+        <span>Magnetic Surveys</span>
+        <span>•</span>
+        <span>Gravity Surveys</span>
+        <span>•</span>
+        <span>Project Coordination</span>
+    </div>
+
+    <div class="language-inline">
+        <strong>EN</strong> |
+        <a href="fr.html">FR</a>
+    </div>
+
+</div>
+    
 <header class="hero">
 
-    <div class="language-switch">
-        <a href="index.html">EN</a> |
-        <strong>FR</strong>
-    </div>
+<video
+    class="hero-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto">
+
+    <source
+        src="MGR_website_video_1.mp4"
+        type="video/mp4">
+
+</video>
 
     <div class="hero-content">
 
-        <h1>Géophysique Marine<br>& Coordination Technique</h1>
+        <p class="services">
+            Représentation client • Supervision de projets
+        </p>
+        
+        <h1>
+            Expertise indépendante  
+			en géophysique marine 
+        </h1>
 
-        <p>
-            Accompagnement de projets de géophysique marine,
-            de la planification à la livraison, avec une expertise
-            en données magnétiques et gravimétriques.
+        <p class="subtitle">
+            De la planification des levés à la livraison du projet
         </p>
 
-        <a href="#contact" class="btn">
-            Me contacter
-        </a>
+   
+
+      <a href="#contact" class="btn">
+        Parlons de votre projet    </a>
+
+        <p class="qualities">
+            
+        </p>
 
     </div>
 
 </header>
 
-<section>
+<section class="about">
 
-    <h2>À propos</h2>
+    <h2>Présentation</h2>
 
-    <div class="about">
+    <p>
+       À l'interface entre les opérations de levés marins, les équipes techniques et les parties prenantes des projets.
+    </p>
 
-        <p>
-            Géophysicienne marine et coordinatrice de projets,
-            spécialisée dans les levés magnétiques et gravimétriques
-            en environnements offshore et côtiers.
-        </p>
+    <br>
 
-        <br>
-
-        <p>
-            J'accompagne mes clients dans la planification,
-            la coordination et la réalisation de projets de
-            géophysique marine à forte exigence technique.
-        </p>
-
-    </div>
+    <p>
+        Accompagnement de projets offshore, côtiers et scientifiques, de la planification jusqu'à la livraison finale.
+    </p>
 
 </section>
 
-<section>
+<section class="expertise"> 
 
     <h2>Expertise</h2>
 
-    <div class="cards">
+    <div class="expertise-grid">
 
-        <div class="card">
-            <h3>Magnétisme Marin</h3>
+        <div class="expertise-item">
+            <h3>Magnétisme marin</h3>
             <p>
-                Planification, acquisition,
-                contrôle qualité et interprétation.
+                Planification des levés, 
+				assistance à l'acquisition, contrôle qualité, 
+				traitement et interprétation des données.
             </p>
         </div>
 
-        <div class="card">
-            <h3>Gravimétrie Marine</h3>
+        <div class="expertise-item">
+            <h3>Gravimétrie marine</h3>
             <p>
-                Gestion et suivi de projets gravimétriques
-                en environnement marin.
+                Supervision et gestion de projets 
+				en gravimétrie marine.
             </p>
         </div>
 
-        <div class="card">
-            <h3>Coordination Technique</h3>
+        <div class="expertise-item">
+            <h3>Coordination de projets</h3>
             <p>
-                Interface entre équipes techniques,
-                prestataires et clients.
+                Interface entre équipes techniques, 
+				contractants et clients.
             </p>
-        </div>
-
-    </div>
-
-</section>
-
-<section>
-
-    <h2>Pourquoi travailler avec moi ?</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <h3>Expérience Internationale</h3>
-        </div>
-
-        <div class="card">
-            <h3>Communication Multilingue</h3>
-        </div>
-
-        <div class="card">
-            <h3>Coordination Technique</h3>
-        </div>
-
-        <div class="card">
-            <h3>Qualité et Orientation Client</h3>
         </div>
 
     </div>
@@ -266,28 +480,32 @@
 </section>
 
 <section id="contact" class="contact">
-
-    <h2>Contact</h2>
-
-    <p>
-        Discutons de votre prochain projet.
-    </p>
+    <h2>Échangeons sur votre projet</h2>
 
     <p>
-        Email : contact@mgrgeo.com
+        Pour toute collaboration, assistance technique 
+		ou besoin d'accompagnement en géophysique marine.
     </p>
 
+    <br>
+
     <p>
-        LinkedIn : andreinagarciareyes
+        Email: contact@mgrgeo.com
     </p>
+
+    <p class="linkedin-link">
+	    <a href="https://www.linkedin.com/in/andreinagarciareyes/"
+	       target="_blank">
+	        Voir le profil LinkedIn
+	    </a>
+	</p>
 
 </section>
 
 <footer>
 
-    © 2026 Géophysique Marine & Coordination Technique
-
-</footer>
+     © 2026 MGR Geophysical Consultants · France</footer>
 
 </body>
+
 </html>
