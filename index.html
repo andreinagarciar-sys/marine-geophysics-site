@@ -37,17 +37,29 @@
 			width: auto;
 			display: block;
 		}
-		
+
+		.brand-name {
+		    color: white;
+		    font-size: 1.1rem;
+		    font-weight: 600;
+		    letter-spacing: 1px;
+		}
+
+		.brand-tagline {
+		    color: rgba(255,255,255,0.8);
+		    font-size: 0.8rem;
+		}
+
 		.btn {
 			background: transparent;
-			border: 2px solid #0B2D52;
+			border: 2px solid #89E9FF;
 			color: #89E9FF;
 			padding: 14px 36px;
 			border-radius: 40px;
 			font-weight: 600;
 			transition: all 0.3s ease;
 		}
-
+		
         .btn:hover {
             background: #0B2D52;
 			color: white;
@@ -228,14 +240,19 @@
 		.language-inline a:hover{
 			text-decoration:underline;
 		}
-        
+
+		.logo-area {
+		    display: flex;
+		    align-items: center;
+		    gap: 14px;
+		}
         .logo-area img {
-			height: 90px;
+			height: 110px;
 			width: auto;
 			display: block;
         }
 
-        .qualities {
+		.qualities {
 			margin-top: 25px;
 			font-size: 1rem;
 			letter-spacing: 1px;
@@ -321,9 +338,18 @@
         <a href="index.html">
             <img src="Logo_MGR_21102026_white.png" alt="MGR">
         </a>
+		<div class="brand-text">
+        <div class="brand-name">
+            MGR Geophysical Consultants
+        </div>
+
+        <div class="brand-tagline">
+            Marine Geophysics • Project Coordination
+        </div>
+   	 </div>
     </div>
 
-    <div class="expertise-nav">
+	<div class="expertise-nav">
         <span>Magnetic Surveys</span>
         <span>•</span>
         <span>Gravity Surveys</span>
@@ -340,9 +366,19 @@
     
 <header class="hero">
 
-	<video class="hero-video" autoplay muted loop playsinline>
-    	<source src="MGR_website_video_1.mp4" type="video/mp4" preload="auto">
-    </video>
+<video
+    class="hero-video"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="auto">
+
+    <source
+        src="MGR_website_video_1.mp4"
+        type="video/mp4">
+
+</video>
 
     <div class="hero-content">
 
@@ -355,8 +391,8 @@
         </p>
         
         <h1>
-            Independent Marine Geophysics
-            Expertise
+            Independent Marine
+			Geophysics Consulting
         </h1>
 
         <p class="subtitle">
