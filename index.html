@@ -240,15 +240,25 @@
 
 		.logo-area {
 		    display: flex;
-		    align-items: center;
+		    align-items: flex-start;
 		    gap: 14px;
+			flex-direction: column;
 		}
+		
         .logo-area img {
 			height: 110px;
 			width: auto;
 			display: block;
         }
 
+		.logo-text {
+		    margin-top: -5px;
+		    color: white;
+		    font-size: 0.70rem;
+		    letter-spacing: 2px;
+		    text-transform: uppercase;
+	 	    opacity: 0.85;
+		}
 		.qualities {
 			margin-top: 25px;
 			font-size: 1rem;
@@ -380,10 +390,6 @@
 
     <div class="hero-content">
 
-        <p class="company-name">
-            MGR Geophysical Consultants
-        </p>
-        
         <p class="services">
             Offshore Geophysics • Project Coordination
         </p>
