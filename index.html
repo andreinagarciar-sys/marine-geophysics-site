@@ -81,6 +81,41 @@
 			margin-top: 80px;
         }
 
+		.contact-form {
+		    max-width: 600px;
+		    margin: 40px auto 0;
+		
+		    display: flex;
+		    flex-direction: column;
+		    gap: 15px;
+		}
+
+		.contact-form input,
+	.contact-form textarea {
+	
+	    width: 100%;
+	
+	    padding: 14px 16px;
+	
+	    border: 1px solid rgba(255,255,255,0.15);
+	
+	    border-radius: 8px;
+	
+	    background: rgba(255,255,255,0.08);
+	
+	    color: white;
+	
+	    font-size: 1rem;
+	}
+
+		.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: rgba(255,255,255,0.55);
+}
+
+		.contact-form textarea {
+    resize: vertical;
+}
         .contact p {
             margin-bottom: 12px;
         }
@@ -504,9 +539,64 @@ from planning through delivery.
 
     <br>
 
+   <section id="contact" class="contact">
+
+    <h2>Échangeons sur votre prochain projet</h2>
+
     <p>
-        Email: contact@mgrgeo.com
+        Pour toute collaboration, assistance technique
+        ou besoin d'accompagnement en géophysique marine.
     </p>
+
+    <form
+    class="contact-form"
+    action="https://formspree.io/f/myeeyqna"
+    method="POST">
+
+        <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            required>
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            required>
+
+        <input
+            type="text"
+            name="company"
+            placeholder="Société (optionnel)">
+
+        <textarea
+            name="message"
+            placeholder="Message"
+            rows="6"
+            required></textarea>
+
+        <button type="submit" class="btn">
+            Submit
+        </button>
+
+    </form>
+
+	<input
+	    type="text"
+	    name="_gotcha"
+	    style="display:none">
+		   
+    <p class="linkedin-link">
+        <a href="https://www.linkedin.com/in/andreinagarciareyes/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Andreina Garcia Reyes sur LinkedIn
+        </a>
+    </p>
+
+</section>
+
 
     <p class="linkedin-link">
 	    <a href="https://www.linkedin.com/in/andreinagarciareyes/"
