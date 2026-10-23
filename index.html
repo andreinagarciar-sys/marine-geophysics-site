@@ -132,7 +132,9 @@
 		}
 		
        .hero {
-		    
+		    background-image: url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
+		    background-size: cover;
+		    background-position: center;
 			min-height: 100vh;
 		    display: flex;
 		    align-items: center;
@@ -142,24 +144,6 @@
 		    padding: 30px;
 		    position: relative;
 		    overflow: hidden;
-		}
-
-		.hero-bg {
-		    position: absolute;
-		
-		    top: 0%;
-		    left: 0%;
-		
-		    width: 100%;
-		    height: 100%;
-		
-		    background-image: url("yucar-studios-cfR-V1QuEKw-unsplash.jpg");
-		    background-size: cover;
-		    background-position: center;
-		
-		    animation: slowzoomOnly 25s infinite alternate ease-in-out;
-		
-		    z-index: 0;
 		}
 
         .hero::before {
@@ -187,48 +171,14 @@
 				rgba(17,43,69,0),
 				rgba(17,43,69,1)
 			);
-			
 			pointer-events: none;
-			inset: -3%;
-			z-index: 2;
-		} 
-
-		@keyframes oceanDrift {
-
-    0% {
-        transform:
-            translateX(0%)
-            translateY(0%)
-            scale(1);
-    }
-
-    50% {
-        transform:
-            translateX(0.3%)
-            translateY(-0.2%)
-            scale(1.015);
-    }
-
-    100% {
-        transform:
-            translateX(0.6%)
-            translateY(0%)
-            scale(1.01);
-    }
-}
-		@keyframes slowzoomOnly {
-    from {
-        transform: scale(1);
-    }
-    to {
-        transform: scale(1.20);
-    }
-}
+		}
+        
         .hero-content {
             max-width: 850px;
             text-shadow: 0 2px 15px rgba(0,0,0,0.45);
             position:relative;
-            z-index: 3;
+            z-index: 2;
         }
 
         .hero h1 {
@@ -390,8 +340,10 @@
     
 <header class="hero">
 
-	<div class="hero-bg"></div>
-	
+	<video class="hero-video" autoplay muted loop playsinline>
+    	<source src="MGR_website_video_1.mp4" type="video/mp4" preload="auto">
+    </video>
+
     <div class="hero-content">
 
         <p class="company-name">
