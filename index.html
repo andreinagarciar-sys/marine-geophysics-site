@@ -91,31 +91,31 @@
 		}
 
 		.contact-form input,
-	.contact-form textarea {
-	
-	    width: 100%;
-	
-	    padding: 14px 16px;
-	
-	    border: 1px solid rgba(255,255,255,0.15);
-	
-	    border-radius: 8px;
-	
-	    background: rgba(255,255,255,0.08);
-	
-	    color: white;
-	
-	    font-size: 1rem;
-	}
+			.contact-form textarea {
+			width: 100%;
+		
+		    padding: 14px 16px;
+		
+		    border: 1px solid rgba(255,255,255,0.15);
+		
+		    border-radius: 8px;
+		
+		    background: rgba(255,255,255,0.08);
+		
+		    color: white;
+		
+		    font-size: 1rem;
+		}
 
 		.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: rgba(255,255,255,0.55);
-}
+			.contact-form textarea::placeholder {
+	    	color: rgba(255,255,255,0.55);
+		}
 
 		.contact-form textarea {
-    resize: vertical;
-}
+	    	resize: vertical;
+		}
+		
         .contact p {
             margin-bottom: 12px;
         }
@@ -274,10 +274,9 @@
 		    letter-spacing: 0.5px;
 		}
 
-			.language-inline a {
+		.language-inline a {
 		    text-decoration: none;
 		    color: rgba(255,255,255,0.55);
-		
 		    transition: color 0.25s ease;
 		}
 
@@ -289,15 +288,16 @@
 		    color: white;
 		    font-weight: 600;
 		}
+		
 		.linkedin-link a {
 			    color: #89E9FF;
 			    text-decoration: none;
 			    font-weight: 600;
-			}
+		}
 			
-			.linkedin-link a:hover {
+		.linkedin-link a:hover {
 			    text-decoration: underline;
-			}
+		}
 
 		.logo-area {
 		    display: flex;
@@ -322,31 +322,23 @@
 		}
 
 		.modal {
-    display: none;
+			display: none;
+			position: fixed;
+			inset: 0;
+			background: rgba(0,0,0,0.70);
+			z-index: 10000;
+		}
 
-    position: fixed;
-    inset: 0;
-
-    background: rgba(0,0,0,0.70);
-
-    z-index: 10000;
-}
 		.modal-content {
-    width: 90%;
-    max-width: 700px;
-
-    margin: 8vh auto;
-
-    padding: 35px;
-
-    background: #112B45;
-
-    border-radius: 12px;
-
-    color: white;
-
-    box-shadow: 0 15px 50px rgba(0,0,0,0.40);
-}
+			width: 90%;
+			max-width: 700px;
+			margin: 8vh auto;
+			padding: 35px;
+			background: #112B45;
+			border-radius: 12px;
+			color: white;
+			box-shadow: 0 15px 50px rgba(0,0,0,0.40);
+		}
 		
 		.qualities {
 			margin-top: 25px;
@@ -376,6 +368,7 @@
 		.separator {
 		    color: rgba(255,255,255,0.35);
 		}
+
         .subtitle {
             font-size: 1.5rem;
             font-weight: 500;
@@ -416,15 +409,12 @@
 		}
       
         @media (max-width:768px) {
-
             .hero h1 {
                 font-size: 2.7rem;
             }
-
             .subtitle {
                 font-size: 1.1rem;
             }
-
             .qualities {
                 font-size: 0.85rem;
             }
@@ -443,66 +433,65 @@
             ×
         </span>
 
-        <h2>Let's Discuss Your Project</h2>
+        <h2>Let's discuss your project</h2>
 
         <form
-    class="contact-form"
-    action="https://formspree.io/f/myeeyqna"
-    method="POST">
+			class="contact-form"
+			action="https://formspree.io/f/myeeyqna"
+			method="POST">
 
-        <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            required>
+				<input
+					type="text"
+					name="name"
+					placeholder="Full Name"
+					required>
 
-        <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required>
+				<input
+					type="email"
+					name="email"
+					placeholder="Email address"
+					required>
 
-        <input
-            type="text"
-            name="company"
-            placeholder="Société (optionnel)">
+				<input
+					type="text"
+					name="company"
+					placeholder="Company (optional)">
 
-        <textarea
-            name="message"
-            placeholder="Message"
-            rows="6"
-            required></textarea>
+				<textarea
+					name="message"
+					placeholder="Your message"
+					rows="6"
+					required></textarea>
 
-        <button type="submit" class="btn">
-            Submit
-        </button>
+				<button type="submit" class="btn">
+					Send message
+				</button>
         </form>
-
     </div>
-
 </div>
 
 	<script>
 
-function openContactModal() {
-    document.getElementById("contactModal").style.display = "block";
-}
+		function openContactModal() {
+			document.getElementById("contactModal").style.display = "block";
+		}
 
-function closeContactModal() {
-    document.getElementById("contactModal").style.display = "none";
-}
+		function closeContactModal() {
+			document.getElementById("contactModal").style.display = "none";
+		}
 
-window.onclick = function(event) {
+		window.onclick = function(event) {
 
-    const modal =
-        document.getElementById("contactModal");
+			const modal =
+				document.getElementById("contactModal");
 
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};
+			if (event.target === modal) {
+				modal.style.display = "none";
+			}
+		};
 
 </script>
+
 <body>
     
 <div class="top-banner">
@@ -580,14 +569,14 @@ window.onclick = function(event) {
 
     <p>
        Working at the interface between marine survey
-operations, technical teams and project stakeholders.
+       operations, technical teams and project stakeholders.
     </p>
 
     <br>
 
     <p>
         Supporting offshore, coastal and research projects
-from planning through delivery.
+        from planning through delivery.
     </p>
 
 </section>
