@@ -1,7 +1,20 @@
-index.html
-fr.html
-privacy_en.html
-privacy_fr.html
-Logo_MGR_08112026_blue_favicon.png
-og-image.jpg
-robots.txt
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://mgrgeo.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://mgrgeo.com/fr.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://mgrgeo.com/privacy_fr.html</loc>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
